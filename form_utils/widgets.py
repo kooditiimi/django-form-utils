@@ -6,7 +6,6 @@ parts of this code taken from http://www.djangosnippets.org/snippets/934/
  - thanks baumer1122
 
 """
-from __future__ import unicode_literals
 
 import posixpath
 

@@ -1,14 +1,10 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 
 from django import forms
-from django.utils.six import python_2_unicode_compatible
-from django.utils import six
 
 from .widgets import ClearableFileInput
 
 
-@python_2_unicode_compatible
 class FakeEmptyFieldFile(object):
     """
     A fake FieldFile that will convice a FileField model field to
@@ -33,7 +29,7 @@ class FakeEmptyFieldFile(object):
 
     """
     def __str__(self):
-        return six.text_type('')
+        return str('')
     _committed = True
 
 
